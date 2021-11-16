@@ -1,0 +1,5 @@
+Quando não tem o position relative
+    o Absolute fica relativo a pag inteira
+
+setInterval(() => { tarefa() }, time)
+    executa uma função a cada tempo

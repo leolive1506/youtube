@@ -1,0 +1,5 @@
+ir no console pra pegar os estilo de elemento desejado
+    window.getComputedStyle(document.body)
+
+    pode pegar um valor especifico
+        window.getComputedStyle(document.body).getPropertyValue()

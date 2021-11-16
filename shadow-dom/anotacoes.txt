@@ -1,0 +1,46 @@
+Shadow dom 
+    Dom fantasma
+    O acontece aqui não impacta a dom exterior a menos que peça p impactar
+
+
+    1) Estrutura: baseado em class
+    extends HTMLElement
+        traz functionalidades do html element
+
+    2) usar obj
+        defina um elemento customizado
+        customElements.define('nome-elemento', nomeClasse criarda)
+            nome-elemnto precisa ser separdo por "-"
+
+    this.attachShadow - responsável por criar a shadow Dom
+        const show = this.attachShadow({mode: 'open'})
+            modo aberto: pode receber alterações do mundo exterior
+
+Trazer de volta o this
+    this.atributOrMetod.bind(this)
+
+evento de saida de mouse
+    addEventListener('mouseout', () => {} )
+    
+
+Fazer estrelinha
+    &#9733;
+
+    mostrar atalhos: ctrl + , >screencast mode
+    fechar todas funções: ctrl + k + 2
+
+
+Estrutura Básica
+    class StarRater extends HTMLElement {
+    constructor() {
+        super()
+
+        const shadow = this.attachShadow({mode: 'open'})
+        shadow.innerHTML = "HEllo from shadow!"
+    }
+}
+
+
+customElements.define('star-rater', StarRater)
+
+    De resto é so manipulação de dom

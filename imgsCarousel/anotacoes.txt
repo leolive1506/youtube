@@ -1,0 +1,23 @@
+flex: none
+    desabilita o auto comportamento do flex de tentar mostrar tudo na tela
+
+adaptar img
+    - uma no pai e outra no filho
+    Pai:
+    scroll-snap-type: x mandatory (ajuste no eixo x e fazer obrigatoriamente)
+    -webkit-overflow-scrolling: touch; (pra funcionar em muitos navegadores)
+        
+    
+    Filho:
+    scroll-snap-align: start
+
+Target é quem está disparando o addEventListener
+
+
+Evento rodinha do mouse(wheel)
+    // propriedades que recebe
+    // isTrusted: true, deltaX: -0, deltaY: 53, deltaZ: 0, deltaMode: 0,
+    // deltaY - positivo pra cima e negativo pra baixo
+
+    event.target.scrollBy(x, y)
+        2 propriedades a ser passada

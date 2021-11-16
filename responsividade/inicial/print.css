@@ -1,0 +1,26 @@
+/* pela meta
+    <link rel="stylesheet" href="print.css" media="print">
+    ele já entende que só é aplicado as medias do tipo print
+    não precisa usar o @media print denovo
+*/
+
+header,
+.hero,
+.image,
+#form {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cards {
+    display: block;
+}
+
+.card {
+    border-bottom: 1px solid
+}
+
+.text--medium {
+    color: black
+}
